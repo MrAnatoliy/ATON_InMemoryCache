@@ -3,9 +3,10 @@ package org.example;
 import java.util.Set;
 
 interface IDataBase<T> {
-    public boolean add(T objectToAdd);
-    public boolean edit(Long index, T editedObject);
-    public  boolean delete(Long index);
+    void add(T objectToAdd);
+    void edit(Long index, T editedObject);
+    void delete(Long index);
 
-    public Set<T> findByField(String fieldName, Object target);
+    Set<T> findByField(String fieldName, Object target);
+    T findById(Object id);
 }

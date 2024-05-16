@@ -24,6 +24,8 @@ public class Main {
         accountSet = dataBase.findByField("name", "A");
         accountSet = dataBase.findByField("value", .35);
 
+        dataBase.findByField("name", 4L);
+
         System.out.println("end");
     }
 }
